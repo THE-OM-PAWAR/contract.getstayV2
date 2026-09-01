@@ -49,6 +49,7 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
+    "prepare": "tsup",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "clean": "rimraf dist"
