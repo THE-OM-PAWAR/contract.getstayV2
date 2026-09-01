@@ -1,6 +1,6 @@
 {
   "name": "@getstay/contracts",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Shared TypeScript contracts, types, Zod schemas, and DTOs for GetStay HQ and Marketplace applications",
   "type": "module",
   "main": "./dist/index.cjs",

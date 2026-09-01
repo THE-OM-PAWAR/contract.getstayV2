@@ -6,6 +6,7 @@ import { EntityIdSchema, TimestampsSchema } from "../common/entity.types.js";
  */
 export const RoomPlanPhotoSchema = z.object({
   url: z.string().url(),
+  publicId: z.string().trim().nullish(),
   isCover: z.boolean().default(false),
   altText: z.string().trim().max(200).nullish(),
   displayOrder: z.number().int().nonnegative().default(0),

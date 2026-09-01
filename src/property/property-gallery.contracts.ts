@@ -10,6 +10,7 @@ export const PropertyGallerySchema = z
     id: EntityIdSchema,
     propertyId: EntityIdSchema,
     url: z.string().url(),
+    publicId: z.string().trim().nullish(),
     category: ImageCategoryEnum,
     title: z.string().trim().max(200).nullish(),
     altText: z.string().trim().max(300).nullish(),

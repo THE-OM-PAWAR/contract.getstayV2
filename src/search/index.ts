@@ -1,6 +1,8 @@
 /**
- * Search domain contracts, schemas, DTOs, and enums.
- * Domain contracts will be added in subsequent phases.
+ * Search Domain Contracts & Public API
  */
 
-export const SEARCH_MODULE_NAME = "search" as const;
+export * from "./enums.js";
+export * from "./search-filters.contracts.js";
+export * from "./search-card.contracts.js";
+export * from "./search-result.contracts.js";

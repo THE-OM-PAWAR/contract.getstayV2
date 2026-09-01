@@ -1,6 +1,12 @@
 /**
- * Marketplace domain contracts, schemas, DTOs, and enums.
- * Domain contracts will be added in subsequent phases.
+ * Marketplace Domain Contracts & Public API
  */
 
-export const MARKETPLACE_MODULE_NAME = "marketplace" as const;
+export * from "./enums.js";
+export * from "./identity.contracts.js";
+export * from "./engagement.contracts.js";
+export * from "./review.contracts.js";
+export * from "./enquiry.contracts.js";
+export * from "./notification.contracts.js";
+export * from "./read-api.contracts.js";
+export * from "./mutation-api.contracts.js";
