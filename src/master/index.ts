@@ -1,6 +1,7 @@
 /**
- * Master Data domain contracts, schemas, DTOs, and enums.
- * Domain contracts will be added in subsequent phases.
+ * Master Data Contracts & Public API
  */
 
-export const MASTER_MODULE_NAME = "master" as const;
+export * from "./enums.js";
+export * from "./location.contracts.js";
+export * from "./property-master.contracts.js";
