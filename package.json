@@ -1,0 +1,81 @@
+{
+  "name": "@getstay/contracts",
+  "version": "0.1.0",
+  "description": "Shared TypeScript contracts, types, Zod schemas, and DTOs for GetStay HQ and Marketplace applications",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./common": {
+      "types": "./dist/common/index.d.ts",
+      "import": "./dist/common/index.js",
+      "require": "./dist/common/index.cjs"
+    },
+    "./master": {
+      "types": "./dist/master/index.d.ts",
+      "import": "./dist/master/index.js",
+      "require": "./dist/master/index.cjs"
+    },
+    "./property": {
+      "types": "./dist/property/index.d.ts",
+      "import": "./dist/property/index.js",
+      "require": "./dist/property/index.cjs"
+    },
+    "./content": {
+      "types": "./dist/content/index.d.ts",
+      "import": "./dist/content/index.js",
+      "require": "./dist/content/index.cjs"
+    },
+    "./marketplace": {
+      "types": "./dist/marketplace/index.d.ts",
+      "import": "./dist/marketplace/index.js",
+      "require": "./dist/marketplace/index.cjs"
+    },
+    "./search": {
+      "types": "./dist/search/index.d.ts",
+      "import": "./dist/search/index.js",
+      "require": "./dist/search/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "rimraf": "^6.0.1",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2"
+  },
+  "keywords": [
+    "getstay",
+    "contracts",
+    "types",
+    "zod",
+    "schemas",
+    "dto",
+    "api"
+  ],
+  "author": "GetStay Engineering",
+  "license": "UNLICENSED",
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
